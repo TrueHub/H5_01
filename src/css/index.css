@@ -1,76 +1,144 @@
-
 /*先删除默认的内外框边距*/
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.main{
+body {
+  background-color: #ffffff;
+  line-height: 30px;
+}
+
+.top {
+  background-color: #ff6e21;
+  height: 120px;
+  font-size: 18px;
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+
+.main {
   height: 1200px;
-  width:60%;
-  margin:0 auto;
-  top: 60px;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 120px;
+  background-color: #555555;
 }
-.sideMenuLeft{
-  height:800px;
-  width:20%;
+
+.sideMenuLeft {
+  height: 800px;
+  width: 20%;
   float: left;
-  left:0;
+  left: 0;
   position: fixed;
-  top: 60px;
+  top: 120px;
 }
-.sideMenuRight{
-  height:800px;
-  width:20%;
+
+.sideMenuRight {
+  height: 800px;
+  width: 20%;
   float: right;
-  right:0;
+  right: 0;
   position: fixed;
-  top: 60px;
+  top: 120px;
 }
-.footer{
-  margin:0 auto;
+
+.footer {
+  margin: 0 auto;
 }
 
 body, td, th, a, li, p, div {
   font-family: "微软雅黑", "Microsoft YaHei UI", Consola, "黑体", "SimHei", serif;
 }
 
-ul li {
+li{
   list-style: none;
-  margin: 1em;
+}
+
+.horlist {
   float: left;
+  padding: 0;
+  margin-top:0;
+  margin-right: 1em;
 }
 
 a {
-  color: #d9d9d9;
+  padding:0;
+  color: #cbcbcb;
   text-decoration: none;
 }
 
 a:link {
-  color: #111111;
+  color: #cbcbcb;
 }
 
 a:hover {
-  color: #99a7ce;
+  color: #ffffff;
+  background-color: #ff6e21;
 }
 
-
-copyright {
+.copyright {
   color: #c8c8c8;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-body{
-  background-color: #e1e1e1;
+
+.hypbox {
+  color: #262626;
+  font-size: 20px;
 }
 
-.top {
+.hypbox:hover {
+  color: #ce460c;
+  background-color: #cecece;
+}
+
+table {
+  width: 100%;
+  height: 90%;
+  padding: 10%;
+}
+
+div{
+  text-align: center;
+}
+
+.colum1 {
+  list-style: none;
+  line-height: 100px;
+  color: #e1e1e1;
+  text-align: center;
+  float: left;
+  font-size: 16px;
+  margin-left: 1em;
+}
+.menuA{
+  width: auto;
+  color: #e1e1e1;
+  text-align: center;
+  float: left;
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 25px;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.menuA:hover {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0px;
+  display: inline-block;
   background-color: #ff6e21;
-  height:60px;
-  font-size: 18px;
-  top: 0;
-  width:100%;
-  position: fixed;
+  float: left;
+  width: auto;
+  color: #ffffff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  text-decoration: none;
 }
